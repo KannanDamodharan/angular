@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FirstCompComponent } from './first-comp/first-comp.component';
+import { MessageDetailsComponent } from './message-details/message-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstCompComponent
+    FirstCompComponent,
+    MessageDetailsComponent
   ],
   imports: [
     BrowserModule, FormsModule
