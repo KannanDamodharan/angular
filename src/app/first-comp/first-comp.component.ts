@@ -9,4 +9,9 @@ export class FirstCompComponent {
   name: string = '';
   email: string = '';
   message: string = '';
+  isSubmitted: boolean = false;
+  
+  onSubmit(): void{
+    this.isSubmitted = true;
+  }
 }
