@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FirstCompComponent } from './first-comp/first-comp.component';
 import { MessageDetailsComponent } from './message-details/message-details.component';
+import { MyFirstService } from './services/my-first.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { MessageDetailsComponent } from './message-details/message-details.compo
   imports: [
     BrowserModule, FormsModule
   ],
-  providers: [],
+  providers: [MyFirstService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
