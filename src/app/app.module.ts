@@ -8,6 +8,7 @@ import { MessageDetailsComponent } from './message-details/message-details.compo
 import { MyFirstService } from './services/my-first.service';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { AboutComponent } from './about/about.component';
     AboutComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, AppRoutingModule
   ],
   providers: [MyFirstService],
   bootstrap: [AppComponent]
