@@ -9,6 +9,7 @@ import { MyFirstService } from './services/my-first.service';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,9 +20,9 @@ import { AppRoutingModule } from './app-routing.module';
     AboutComponent
   ],
   imports: [
-    BrowserModule, FormsModule, AppRoutingModule
+    BrowserModule, FormsModule, AppRoutingModule, HttpClientModule
   ],
-  providers: [MyFirstService],
+  providers: [MyFirstService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
